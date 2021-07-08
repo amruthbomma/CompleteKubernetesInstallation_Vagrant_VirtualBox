@@ -65,9 +65,9 @@ Step 2: Install Softwares (Docker,kubeclt,kubeadm,kubelet,control plane),
         Log in to each servers and run the scripts according to the script naming convension.
 		> ./1_InstallOnAll3Nodes.ksh
 		> ./2_InstallOnONLYMasterNode.ksh
+		 after 2nd script YOU  have to copy the Kubeadm join command output from Master to the 2 Worker nodes MANUALLY
 		> ./3_InstallOnAll3Nodes.ksh
 		> ./4_InstallOnONLYMasterNode.ksh
-		
 		
 
 
