@@ -21,7 +21,6 @@ spec:
   - pathPrefix: "/run/flannel"
   readOnlyRootFilesystem: false
   # Users and groups
-  # Test
   runAsUser:
     rule: RunAsAny
   supplementalGroups:
