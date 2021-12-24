@@ -30,3 +30,9 @@ echo "  "
 echo "  "
 echo "  #After installing these components, verify that Kubeadm is working by getting the version info by command kubeadm version. "
 kubeadm version
+
+#restarting the kubectl service and validating the Kubectl service
+sudo su
+rm -R /etc/systemd/system/kubelet.service.d && rm -rf /etc/systemd/system/kubelet.service
+systemctl daemon-reload && systemctl restart kubelet && systemctl status kubelet
+exit
