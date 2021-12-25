@@ -1,4 +1,4 @@
-# Install Docker on ALL nodes 
+# Install Docker on ALL nodes
 # Reference https://acloudguru-content-attachment-production.s3-accelerate.amazonaws.com/1597958284283-01_03_Installing%20Docker.pdf
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
@@ -33,5 +33,6 @@ kubeadm version
 
 #restarting the kubectl service and validating the Kubectl service
 #rm -R /etc/systemd/system/kubelet.service.d && rm -rf /etc/systemd/system/kubelet.service
-sudo systemctl daemon-reload && sudo systemctl enable kubelet && sudo systemctl restart kubelet && sudo systemctl status kubelet
-
+sudo systemctl enable kubelet
+sudo systemctl restart kubelet &
+sudo systemctl status kubelet &
